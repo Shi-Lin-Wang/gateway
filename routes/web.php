@@ -19,6 +19,24 @@ $router->post('/signup', 'signupController@store');
 $router->get('/login', 'LoginController@create');
 $router->post('/login', 'LoginController@store');
 $router->get('/logout', 'LoginController@destroy');
+$router->get('/chooseShop', 'chooseShopController@index');
+
+$router->get('/browserProduct', 'browserProductController@create');
+$router->post('/browserProduct1', 'browserProductController@store');
+
+$router->get('/viewProduct', 'viewProductController@create');
+$router->post('/viewProduct1', 'viewProductController@store');
+$router->post('/addcart', 'cartController@addcart');
+$router->get('/cart', 'cartController@cart');
+$router->get('/getcartDetail', 'cartController@getcartDetail');
+$router->get('/CartDelete', 'cartController@CartDelete');
+$router->get('/getOrder', 'OrderController@getOrder');
+$router->get('/viewOrder', 'OrderController@viewOrder');
+$router->get('/CartToOrder', 'cartController@CartToOrder');
+$router->get('/navSigninCheck', 'SigninCheckController@navSigninCheck');
+$router->post('/getcart', 'getCartAmountController@store');
+$router->get('/pay', 'PaypalController@pay');
+//$router->post('/pay', 'PaypalController@pay');
 
 
  //$router->post('/pay', 'PaypalController@store');

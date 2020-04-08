@@ -12,4 +12,10 @@ return [
         'base_uri' => env('PAYS_SERVICE_BASE_URL'),
 
     ],
+
+    'shop' => [
+        'base_uri' => env('shop_SERVICE_BASE_URL'),
+
+    ],
+
 ];
